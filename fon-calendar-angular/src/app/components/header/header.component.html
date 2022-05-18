@@ -1,0 +1,13 @@
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor01"
+      aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+  
+    <div class="collapse navbar-collapse" id="navbarColor01">
+      <div id="logo" class="navbar-brand" href="#"><img id="fonLogo" src="/assets/images/logo.png" /></div>
+      <div id="greetingsMessage" *ngIf="loggedIn">Greetings <br> {{userInfo}}</div>
+      <a *ngIf="!loggedIn" class="nav-link" href="login">Login</a>
+      <a *ngIf="loggedIn" class="nav-link" href="login" (click)="logout()">Logout</a>
+    </div>
+  </nav>

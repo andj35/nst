@@ -1,0 +1,23 @@
+@import "../node_modules/angular-calendar/css/angular-calendar.css";
+@import '../node_modules/flatpickr/dist/flatpickr.min.css';
+
+.cal-days{
+    width:600px;
+}
+.row{
+    width: 600px;
+}
+#events{
+    margin-left: 100px;
+}
+
+.cal-day-cell{
+    min-height: 40px !important;
+}
+
+#title{
+    margin-top: 5px;
+    margin-left: 15px;
+    font-size: 20px;
+    font-weight: 500;
+}
